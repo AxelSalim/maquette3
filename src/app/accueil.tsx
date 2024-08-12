@@ -42,7 +42,7 @@ const Accueil: React.FC<{ childrens: React.ReactNode }> = ({ childrens }) => {
       </head>
 
       <body className={`content ${poppins.className}`}>
-        <header className="relative">
+        <header className="">
             <Header></Header>
             <Navbar></Navbar>
         </header>
