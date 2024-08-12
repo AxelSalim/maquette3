@@ -4,6 +4,7 @@ import "./globals.css";
 import { poppins } from "./page/fonts";
 import  { useEffect, useState } from "react";
 import { ThemeModeScript } from "flowbite-react";
+import { Navbar } from "./components/Navbar";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
@@ -14,23 +15,23 @@ const Accueil: React.FC<{ childrens: React.ReactNode }> = ({ childrens }) => {
   const [fadeOutLoading, setFadeOutLoading] = useState(false);
 
 
-  if (loading) {
-    return (
-      <html>
-        <head>
-          <title>GUNIVERS</title>
-          <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
-          <ThemeModeScript />
-        </head>
+//   if (loading) {
+//     return (
+//       <html>
+//         <head>
+//           <title>BrainWave</title>
+//           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"/>
+//           <ThemeModeScript />
+//         </head>
 
-        <body className={`${poppins.className}`}>
-          <div className={`loading-screen ${fadeOutLoading ? 'fade-out' : ''}`}>
-            <span className="loader"></span>
-          </div>
-        </body>
-      </html>
-    );
-  }
+//         <body className={`${poppins.className}`}>
+//           <div className={`loading-screen ${fadeOutLoading ? 'fade-out' : ''}`}>
+//             <span className="loader"></span>
+//           </div>
+//         </body>
+//       </html>
+//     );
+//   }
 
   return (
     <html>
@@ -41,17 +42,18 @@ const Accueil: React.FC<{ childrens: React.ReactNode }> = ({ childrens }) => {
       </head>
 
       <body className={`content ${poppins.className}`}>
-        <section className="relative">
-            <Header />
-        </section>
+        <header className="relative">
+            <Header></Header>
+            <Navbar></Navbar>
+        </header>
 
-        <section className="">
+        <main className="">
             { childrens }
-        </section>
+        </main>
 
-        <section className="bg-[#fdfcff] pt-20">
+        <footer className="">
             <Footer />
-        </section>
+        </footer>
       </body>
     </html>
   );
