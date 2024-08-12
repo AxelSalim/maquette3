@@ -54,6 +54,27 @@ export default function Footer() {
             ],
         },
         {
+            label: "Services",
+            items: [
+                {
+                    href: '/',
+                    name: 'Digital Marketing'
+                },
+                {
+                    href: '/',
+                    name: 'Content Writing'
+                },
+                {
+                    href: '/',
+                    name: 'SEO for Business'
+                },
+                {
+                    href: '/',
+                    name: 'UI Design'
+                },
+            ],
+        },
+        {
             label: "Legal",
             items: [
                 {
@@ -74,68 +95,63 @@ export default function Footer() {
 
     return (
         <>
-         <footer className="px-4 py-5 max-w-6xl mx-auto md:px-8">
-            <div className="md:gap-48 justify-between md:flex">
-                <div className="flex-1 gap-10 justify-between md:flex ">
-                    {footerNavs.map((item, idx) => (
-                        <ul className="mb-8" key={idx}>
-                            <h1 className="text-gray-500 text-sm font-normal mb-2 md:mb-6">{ item.label }</h1>
-                                
-                            {item.items.map(((el, idx) => (
-                                <li key={idx} className="mb-4">
-                                    <a href={el.href} className="transition-all text-[#161c2d] hover:text-[#f74d4d]">
-                                        { el.name }
-                                    </a>
-                                </li>
-                            )))}
-                        </ul>
-                    ))}
-                </div>
-
-                <div className="flex-1">
-                    <div className="max-w-xs">
-                        <p className="text-gray-500 text-sm font-normal mb-6">Download Our App</p>
-                    </div>
-                    <Image src="/1x/''Fichier 4.png" width={180} height={180} alt="Image background"  className="mb-2 cursor-pointer transition-all hover:scale-105" />
-                    <Image src="/1x/''Fichier 5.png" width={180} height={180} alt="Image background"  className="cursor-pointer transition-all hover:scale-105" />
-                </div>
-            </div>
-            <section className="mt-8 py-2 md:py-8 border-t items-center justify-between sm:flex">
-                <section className="mt-4 flex flex-wrap justify-center gap-2 text-[#161c2d] font-light text-sm sm:mt-0">
-                    <div>&copy; 2024 Copyright, All Right Reserved, Made by Seju_ui_ux with</div>
-                    <div>
-                        <div className="flex items-center text-[#f74d4d]">
-                            <FaHeart className="w-4 h-4"/>
-                        </div>
-                    </div>
+         <footer className="">
+            <section className="mt-8 py-2 md:py-8 items-center justify-between bg-[#68d585] sm:flex">
+                <section className="flex flex-wrap justify-center items-center gap-5 text-[#161c2d] sm:mt-0 py-4">
+                    <h2 className="text-2xl font-semibold text-white">Ready to get started?</h2>
+                    <button className="border hover:scale-105 transition-all bg-white font-semibold rounded-md text-md px-6 py-2">Get A Free Quote</button>
                 </section>
-
-                <section className="items-center justify-between sm:flex">
-                    <section className="flex items-center justify-center gap-x-6 text-[#161c2d] mt-4 sm:mt-0">
-                        <Link href="https://www.tiktok.com/@gunivers1" target="_blank">
-                            <div className="flex items-center hover:text-[#f74d4d] cursor-pointer transition-all hover:scale-110">
-                                <FaTwitter className="w-5 h-5"/>
-                            </div>
-                        </Link>
-                        <Link href="https://web.facebook.com/GGUNIVERS" target="_blank">
-                            <div className="flex items-center hover:text-[#f74d4d] cursor-pointer transition-all hover:scale-110">
-                                <FaFacebook className="w-5 h-5"/>
-                            </div>
-                        </Link>
-                        <Link href="https://www.instagram.com/g_gunivers" target="_blank">
-                            <div className="flex items-center hover:text-[#f74d4d] cursor-pointer transition-all hover:scale-110">
-                                <FaInstagram className="w-5 h-5"/>
-                            </div>
-                        </Link>
-                        <Link href="https://www.linkedin.com/company/gunivers" target="_blank">
-                            <div className="flex items-center hover:text-[#f74d4d] cursor-pointer transition-all hover:scale-110">
-                                <FaLinkedin className="w-5 h-5"/>
-                            </div>
-                        </Link>
-                    </section>
-                </section>
-                
             </section>
+
+            <section className="bg-[#161c2d]">
+                <section className="max-w-4xl mx-auto md:gap-5 justify-between md:flex py-10">
+                    <div className="flex-1">
+                        <section>
+                            <h1 className="text-white text-xl font-bold mb-2 md:mb-6">BrainWave.io</h1>
+                            <p className="font-normal text-sm text-gray-500">With lot of unique blocks, you can easily build a page without coding. <br/> Build your next landing page</p>
+                        </section>
+                        <section className="flex items-center justify-center gap-x-6 text-[#161c2d] mt-4 sm:mt-0">
+                            <Link href="https://www.tiktok.com/@gunivers1" target="_blank">
+                                <div className="flex items-center hover:text-[#68d585] cursor-pointer transition-all hover:scale-110">
+                                    <FaTwitter className="w-5 h-5"/>
+                                </div>
+                            </Link>
+                            <Link href="https://web.facebook.com/GGUNIVERS" target="_blank">
+                                <div className="flex items-center hover:text-[#68d585] cursor-pointer transition-all hover:scale-110">
+                                    <FaFacebook className="w-5 h-5"/>
+                                </div>
+                            </Link>
+                            <Link href="https://www.instagram.com/g_gunivers" target="_blank">
+                                <div className="flex items-center hover:text-[#68d585] cursor-pointer transition-all hover:scale-110">
+                                    <FaInstagram className="w-5 h-5"/>
+                                </div>
+                            </Link>
+                            <Link href="https://www.linkedin.com/company/gunivers" target="_blank">
+                                <div className="flex items-center hover:text-[#68d585] cursor-pointer transition-all hover:scale-110">
+                                    <FaLinkedin className="w-5 h-5"/>
+                                </div>
+                            </Link>
+                        </section>
+                    </div>
+
+                    <div className="flex-1 gap-10 justify-between md:flex ">
+                        {footerNavs.map((item, idx) => (
+                            <ul className="mb-8" key={idx}>
+                                <h1 className="text-gray-500 text-sm font-normal mb-2 md:mb-6">{ item.label }</h1>
+                
+                                {item.items.map(((el, idx) => (
+                                    <li key={idx} className="mb-4">
+                                        <a href={el.href} className="transition-all text-gray-300 text-[0.7rem] hover:text-[#68d585]">
+                                            { el.name }
+                                        </a>
+                                    </li>
+                                )))}
+                            </ul>
+                        ))}
+                    </div>
+                </section>
+            </section>
+
         </footer>
         </>
     )
