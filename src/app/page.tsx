@@ -4,34 +4,17 @@ import Head from "next/head";
 import Header from "./components/Header";
 import Main from "./components/Main";
 import Footer from "./components/Footer";
-import Image from "next/image";
 import { ThemeModeScript } from "flowbite-react";
+import { Navbar } from "./components/Navbar";
 
 
-const Home: React.FC<{ childrens: React.ReactNode }> = ({ childrens }) => {
+export default function Page() {
   return (
     <>
-      <Head>
-        <title>Acceuil - BrainWave</title>
-        <meta name="description" content="BrainWave" />
-        <ThemeModeScript />
-      </Head>
-
-
-      <section className="relative">
-        <Header></Header>
-      </section>
-
-      <section className="">
-        {childrens}
-      </section>
-
-      <section className="bg-[#fdfcff] pt-20">
-        <Footer></Footer>
-      </section>
-      
+      <main>
+        <h1 className="bg-red-700">Lorem ipsum dolor sit amet.</h1>
+      </main>
     </>
   );
 }
 
-export default Home;
