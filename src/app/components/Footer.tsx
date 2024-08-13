@@ -96,7 +96,7 @@ export default function Footer() {
     return (
         <>
          <footer className="">
-            <section className=" md:py-8 items-center justify-between bg-[#68d585] sm:flex">
+            <section className=" md:py-10 items-center justify-between bg-[#68d585] sm:flex">
                 <section className="flex flex-wrap justify-center mx-auto items-center gap-5 text-[#161c2d] sm:mt-0 ">
                     <h2 className="text-2xl font-semibold text-white">Ready to get started?</h2>
                     <button className="border hover:scale-105 transition-all bg-white font-semibold rounded-md text-md px-6 py-2">Get A Free Quote</button>
