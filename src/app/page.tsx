@@ -94,7 +94,7 @@ export default function Page() {
                 <div className="block rounded-lg p-4" data-aos="fade-up" data-aos-duration="500">
                     <p className="font-bold text-md text-left text-black">Isabella Chavez</p>
                     <span className="rounded-md p-1">
-                        <Image src="/1x/''Fichier 14.png" width={300} height={300} alt="Image People" />
+                        <Image src="/1x/''Fichier 14.png" width={300} height={300} alt=" Image People" />
                     </span>
 
                     <p className="sm:mt-1 block text-sm text-left sm:text-sm leading-loose text-gray-600 font-light">With lost of unique blocks, you can easily build a page without coding. Build your next landing page.</p>
