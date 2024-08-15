@@ -28,10 +28,12 @@ export default function Page() {
             <section className="relative pt-[5rem] z-40">
               <section className="md:flex md:flex-wrap md:gap-10 max-w-5xl mx-auto py-6 h-[28rem]  z-50">
                 <section className="flex-1 px-4">
-                  <h1 className="text-black font-bold text-4xl  md:text-left mt-10">Make your business powerful with Shade.</h1>
-                  <p className="font-light text-gray-600 text-md w-4/5 mt-5 leading-loose">With lost of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
-                  <button className="px-6 py-4 bg-[#473bf0] text-white text-sm font-semibold rounded-md mt-6 transition-all hover:scale-105">Get A Free Quote</button>
-                  <p className="uppercase text-black font-bold text-xs my-6 pl-6">Watch how we can help</p>
+                  <h1 className="text-black font-bold text-2xl md:text-4xl text-center md:text-left mt-5 md:mt-10">Make your business powerful with Shade.</h1>
+                  <p className="font-light text-gray-600 text-md text-center md:text-left w-full md:w-4/5 mt-5 leading-loose">With lost of unique blocks, you can easily build a page without coding. Build your next consultancy website within few minutes.</p>
+                  <div className="text-center md:text-left">
+                    <button className="px-6 py-4 bg-[#473bf0] text-white text-sm font-semibold rounded-md mt-6 transition-all hover:scale-105">Get A Free Quote</button>
+                  </div>
+                  <p className="uppercase text-black font-bold text-xs my-6 text-center md:text-left md:pl-6">Watch how we can help</p>
                 </section>
 
                 <section className="relative md:flex-1 text-center">
@@ -45,21 +47,23 @@ export default function Page() {
               </section>
             </section>
             
-            <div className="bg-[#161c2d] py-8 absolute z-50 w-full">
-              <div className="flex items-center justify-center gap-2">
+            <div className="bg-[#161c2d] py-8 md:absolute md:z-50 w-full">
+              <div className="flex flex-wrap items-center justify-center gap-2">
                 <FaPlay className="w-5 h-5 border rounded-full hover:scale-110 text-white transition-all p-1" />
-                <p className="font-light text-xs text-gray-300">Interested how our software works for you? <span className="underline">Watch our 1 minute video</span></p>
+                <p className="font-light text-xs text-center md:text-left text-gray-300">Interested how our software works for you? <span className="underline">Watch our 1 minute video</span></p>
               </div>
             </div>
           </section>
 
           {/* Experienced experts are giving advices. */}
-          <section className="flex flex-col items-center relative text-center border-0 py-6 md:py-14">
-              <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 px-4">
+          <section className="flex flex-col items-center relative text-center border-0 py-4 md:py-14">
+              <div className="max-w-5xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 md:mt-10 px-4">
                 <div className="block rounded-lg text-left p-4" data-aos="fade-up" data-aos-duration="500">
-                  <h1 className="text-black font-bold text-2xl mt-10">Experienced experts are giving advices.</h1>
-                  <p className="font-light text-gray-600 mt-5 leading-loose">We share common trends and strategies for improving your rental income and making sure you stay in high demand.</p>
-                  <button className="px-6 py-2 bg-[#473bf0] text-white rounded-md mt-6 ">Learn how we work</button>
+                  <h1 className="text-black font-bold text-2xl text-center md:text-left md:mt-10">Experienced experts are giving advices.</h1>
+                  <p className="font-light text-gray-600 text-center md:text-left mt-5 leading-loose">We share common trends and strategies for improving your rental income and making sure you stay in high demand.</p>
+                  <div className="text-center md:text-left">
+                    <button className="px-6 py-2 bg-[#473bf0] text-white rounded-md mt-6 ">Learn how we work</button>
+                  </div>
                 </div>
                 
                 <div className="flex justify-center rounded-lg p-4" data-aos="fade-up" data-aos-duration="1000">
@@ -67,13 +71,12 @@ export default function Page() {
                 </div>
                 
                 <div className="block rounded-lg p-4" data-aos="fade-up" data-aos-duration="1500">
-                    <p className="font-bold text-3xl text-left text-black">1M+</p>
-                    <p className="sm:mt-2 block text-sm text-left sm:text-sm leading-loose pt-2 text-gray-600 font-light">Customers visit Albino every month to get their service done.</p>
-
-                    <p className="font-bold text-3xl text-left mt-8 text-black">92%</p>
-                    <p className="sm:mt-1 block text-sm text-left sm:text-sm leading-loose pt-2 text-gray-600 font-light">Satisfaction rate comes from our awesome customers.</p>
-                    <p className="font-bold text-3xl text-left mt-8 text-black">4.9/5.0</p>
-                    <p className="sm:mt-1 block text-sm text-left sm:text-sm leading-loose pt-2 text-gray-600 font-light">Average customer ratings we have got all over internet.</p>
+                    <p className="font-bold text-3xl text-center md:text-left text-black">1M+</p>
+                    <p className="sm:mt-2 block text-sm text-center md:text-left sm:text-sm leading-loose pt-2 text-gray-600 font-light">Customers visit Albino every month to get their service done.</p>
+                    <p className="font-bold text-3xl text-center md:text-left mt-8 text-black">92%</p>
+                    <p className="sm:mt-1 block text-sm text-center md:text-left sm:text-sm leading-loose pt-2 text-gray-600 font-light">Satisfaction rate comes from our awesome customers.</p>
+                    <p className="font-bold text-3xl text-center md:text-left mt-8 text-black">4.9/5.0</p>
+                    <p className="sm:mt-1 block text-sm text-center md:text-left sm:text-sm leading-loose pt-2 text-gray-600 font-light">Average customer ratings we have got all over internet.</p>
                 </div>
                 
 
